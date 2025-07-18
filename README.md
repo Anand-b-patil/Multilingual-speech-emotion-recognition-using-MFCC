@@ -48,10 +48,22 @@ Long Short-Term Memory Networks (LSTM)
 
 Transformer-based models
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue.svg)
-![License](https://img.shields.io/github/license/Anand-b-patil/Multilingual-speech-emotion-recognition-using-MFCC)
-![Last Commit](https://img.shields.io/github/last-commit/Anand-b-patil/Multilingual-speech-emotion-recognition-using-MFCC)
-![Issues](https://img.shields.io/github/issues/Anand-b-patil/Multilingual-speech-emotion-recognition-using-MFCC)
-![Stars](https://img.shields.io/github/stars/Anand-b-patil/Multilingual-speech-emotion-recognition-using-MFCC?style=social)
+
+![NumPy](https://img.shields.io/badge/NumPy-1.24+-orange)
+
+![Pandas](https://img.shields.io/badge/Pandas-1.5+-blue)
+
+![Librosa](https://img.shields.io/badge/Librosa-0.10+-brightgreen)
+
+![Scikit--learn](https://img.shields.io/badge/scikit--learn-1.2+-yellow)
+
+![Keras](https://img.shields.io/badge/Keras-2.x-red)
+
+![TensorFlow](https://img.shields.io/badge/TensorFlow-2.x-orange)
+
+![Matplotlib](https://img.shields.io/badge/Matplotlib-3.x-green)
+
+![XGBoost](https://img.shields.io/badge/XGBoost-1.7+-lightgrey)
 
 📈 Results
 The models achieve high accuracy across different emotions and languages.
