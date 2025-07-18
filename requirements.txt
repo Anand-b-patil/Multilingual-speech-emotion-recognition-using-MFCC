@@ -1,0 +1,13 @@
+IPython
+Pillow
+glob2
+keras
+librosa
+matplotlib
+numpy
+pandas
+pydub
+scikit-learn
+sounddevice
+tensorflow
+tk

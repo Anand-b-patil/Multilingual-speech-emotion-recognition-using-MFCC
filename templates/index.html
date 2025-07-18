@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Speech Emotion Detection</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            height: 100vh;
+            overflow: hidden;
+            background: url('https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+            animation: zoomBackground 40s ease-in-out infinite;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        @keyframes zoomBackground {
+            0%, 100% {
+                background-size: 100%;
+            }
+            50% {
+                background-size: 105%;
+            }
+        }
+
+        .container {
+            background: rgba(0, 0, 0, 0.75);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(8px);
+            text-align: center;
+            animation: floatUp 1.5s ease forwards, floatGlow 6s ease-in-out infinite;
+            width: 90%;
+            max-width: 500px;
+            opacity: 0;
+            transform: translateY(50px);
+        }
+
+        @keyframes floatUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes floatGlow {
+            0%, 100% {
+                box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            }
+            50% {
+                box-shadow: 0 8px 32px rgba(0, 255, 255, 0.5);
+            }
+        }
+
+        h1 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: #00eaff;
+            animation: fadeIn 2s ease forwards;
+        }
+
+        input[type="file"] {
+            margin: 20px 0;
+            padding: 12px;
+            border: none;
+            border-radius: 10px;
+            background: #fff;
+            color: #333;
+            font-weight: 500;
+            animation: fadeIn 2.5s ease forwards;
+        }
+
+        button {
+            padding: 12px 30px;
+            margin-top: 15px;
+            border: none;
+            border-radius: 30px;
+            background: linear-gradient(135deg, #00eaff, #00ffa2);
+            color: #000;
+            font-weight: bold;
+            font-size: 16px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            animation: fadeIn 3s ease forwards;
+        }
+
+        button:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 15px #00ffe0;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: scale(0.95);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎙️ Speech Emotion Detection</h1>
+        <form action="/predict" method="post" enctype="multipart/form-data">
+            <input type="file" name="file" accept=".wav" required>
+            <br>
+            <button type="submit">🔍 Analyze Emotion</button>
+        </form>
+    </div>
+</body>
+</html>

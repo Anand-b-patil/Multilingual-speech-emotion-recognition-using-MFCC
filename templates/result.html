@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Emotion Detection Result</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: url('https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+            animation: zoomBackground 40s ease-in-out infinite;
+            color: #fff;
+            text-align: center;
+            padding: 40px;
+        }
+
+        .container {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 0 15px #000;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        h1 {
+            font-size: 32px;
+        }
+
+        .result {
+            font-size: 28px;
+            color: #ffe082;
+            margin: 30px 0;
+        }
+
+        img {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #000;
+            margin-top: 20px;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 12px 25px;
+            background-color: #29b6f6;
+            color: white;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background 0.3s ease;
+        }
+
+        a:hover {
+            background-color: #0288d1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎧 Emotion Detection Result</h1>
+        <div class="result">🧠 Detected Emotion: <strong>{{ emotion }}</strong></div>
+
+        <div>
+            <p>📁 <strong>File:</strong> {{ filename }}</p>
+            <p>⏱️ <strong>Duration:</strong> {{ duration }} seconds</p>
+            <p>🎙️ <strong>Sample Rate:</strong> {{ sample_rate }} Hz</p>
+            <p>🎛️ <strong>MFCC Features:</strong> {{ mfcc_count }}</p>
+        </div>
+
+        <div>
+            <h3>📈 Waveform</h3>
+            <img src="{{ waveform_url }}" alt="Waveform">
+        </div>
+
+        <div>
+            <h3>🌈 Spectrogram</h3>
+            <img src="{{ spectrogram_url }}" alt="Spectrogram">
+        </div>
+
+        <a href="/">🎤 Try Another File</a>
+    </div>
+</body>
+</html>
