@@ -71,6 +71,21 @@ The models achieve high accuracy across different emotions and languages.
 
 Demonstrated potential for real-time multilingual emotion detection.
 
+🎯 Sample Prediction Outputs
+
+Below are example outputs of the model's predictions on multilingual speech data:
+
+<div align="center">
+  <img src="static/prediction1.png" alt="Prediction 1" width="400"/>
+  <img src="static/prediction2.png" alt="Prediction 2" width="400"/>
+</div>
+
+<p align="center">
+  <b>Left:</b> Prediction on English audio (Angry) &nbsp;&nbsp; | &nbsp;&nbsp;
+  <b>Right:</b> Prediction on Spanish audio (Happy)
+</p>
+
+
 
 🚧 Future Improvements
 🔄 Real-time emotion recognition integration using streaming audio input.
