@@ -47,6 +47,7 @@ Convolutional Neural Networks (CNN)
 Long Short-Term Memory Networks (LSTM)
 
 Transformer-based models
+
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue.svg)
 
 ![NumPy](https://img.shields.io/badge/NumPy-1.24+-orange)
