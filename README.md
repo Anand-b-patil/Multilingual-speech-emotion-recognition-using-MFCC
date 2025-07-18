@@ -76,11 +76,11 @@ Demonstrated potential for real-time multilingual emotion detection.
 Below are example outputs of the model's predictions on multilingual speech data:
 
 <div align="center">
-  <img src="static/home_page.png" alt="Prediction 1" width="400"/>
+  <img src="static/home_page.png" alt="Prediction 1" />
 </div>
 
 <div align="center">
-  <img src="static/result_page.png" alt="Prediction 2 " width="400"/>
+  <img src="static/result_page.png" alt="Prediction 2 " />
 </div>
 
 
