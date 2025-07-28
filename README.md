@@ -1,105 +1,138 @@
-##🌍 Multilingual Speech Emotion Recognition 🎙️🧠
-A machine learning and deep learning-based project for detecting emotions from speech across multiple languages using advanced audio processing techniques.
 
-📌 Project Overview
-This project focuses on classifying emotions from speech audio samples across multiple languages. It leverages key acoustic features and cutting-edge machine learning and deep learning models for multilingual emotion classification.
 
-🚀 Features
-✅ Supports multiple languages (e.g., English, Spanish, French).
-✅ Detects various emotions: happy, sad, angry, neutral, etc.
-✅ Utilizes MFCC, Chroma, and Mel Spectrograms for feature extraction.
-✅ Implements CNN, LSTM, and Transformer-based deep learning models.
-✅ Designed to be extensible for real-time emotion detection.
+# 🌍 Multilingual Speech Emotion Recognition 🎙️🧠
 
-📂 Dataset
-The project uses the Toronto Emotional Speech Set (TESS), which contains speech samples from two female actors simulating different emotions while reading predefined sentences.
+A machine learning and deep learning-based project for detecting emotions from speech across **multiple languages** using advanced **audio processing** and **neural network architectures**.
 
-🛠️ Installation
+---
+
+## 📌 Project Overview
+
+This project classifies emotions from speech audio samples across various languages. It extracts powerful acoustic features (MFCCs, Chroma, Mel Spectrograms) and applies both **machine learning** and **deep learning** models to recognize emotions like happiness, sadness, anger, and neutrality.
+
+---
+
+## 🚀 Features
+
+* ✅ Multilingual support (English, Spanish, French, etc.)
+* ✅ Emotion detection: **Happy**, **Sad**, **Angry**, **Neutral**, etc.
+* ✅ Advanced audio feature extraction using `Librosa`
+* ✅ ML Models: SVM, Random Forest, XGBoost
+* ✅ DL Models: CNN, LSTM, Transformers
+* ✅ Scalable for **real-time** emotion detection applications
+
+---
+
+## 📂 Dataset
+
+* **Toronto Emotional Speech Set (TESS)**
+  Includes speech samples from two female actors, simulating various emotions across multiple sentences.
+
+---
+
+## 🛠️ Installation
+
 Clone the repository:
 
+```bash
 git clone https://github.com/Anand-b-patil/Multilingual-speech-emotion-recognition-using-MFCC.git
 cd Multilingual-speech-emotion-recognition-using-MFCC
+```
 
-Install required dependencies:
+Install the dependencies:
 
+```bash
 pip install -r requirements.txt
+```
 
-🧪 Model Training & Evaluation
-🎼 Feature Extraction
-MFCC (Mel Frequency Cepstral Coefficients)
+---
 
-Chroma Frequencies
+## 🎼 Feature Extraction
 
-Mel Spectrograms
+Features are extracted using **Librosa**:
 
-All features are extracted using Librosa.
+* 🎵 **MFCC** (Mel Frequency Cepstral Coefficients)
+* 🎼 **Chroma Frequencies**
+* 🌈 **Mel Spectrograms**
 
-🧠 Machine Learning Models
-Support Vector Machine (SVM)
+---
 
-Random Forest
+## 🧠 Models Used
 
-XGBoost
+### 🛠 Machine Learning Models
 
-🤖 Deep Learning Models
-Convolutional Neural Networks (CNN)
+* 🔹 Support Vector Machine (SVM)
+* 🔹 Random Forest
+* 🔹 XGBoost
 
-Long Short-Term Memory Networks (LSTM)
+### 🤖 Deep Learning Models
 
-Transformer-based models
+* 🧱 Convolutional Neural Networks (CNN)
+* ⏳ Long Short-Term Memory (LSTM)
+* 🧠 Transformer-based Architectures
 
-![Python](https://img.shields.io/badge/Python-3.8%2B-blue.svg)
+---
 
-![NumPy](https://img.shields.io/badge/NumPy-1.24+-orange)
+## 📊 Results
 
-![Pandas](https://img.shields.io/badge/Pandas-1.5+-blue)
+* ✅ High accuracy for emotion detection across languages
+* 🔬 Robust performance on multiple datasets
+* 🚀 Ready for future **real-time deployment** potential
 
-![Librosa](https://img.shields.io/badge/Librosa-0.10+-brightgreen)
+---
 
-![Scikit--learn](https://img.shields.io/badge/scikit--learn-1.2+-yellow)
-
-![Keras](https://img.shields.io/badge/Keras-2.x-red)
-
-![TensorFlow](https://img.shields.io/badge/TensorFlow-2.x-orange)
-
-![Matplotlib](https://img.shields.io/badge/Matplotlib-3.x-green)
-
-![XGBoost](https://img.shields.io/badge/XGBoost-1.7+-lightgrey)
-
-📈 Results
-The models achieve high accuracy across different emotions and languages.
-
-Demonstrated potential for real-time multilingual emotion detection.
-
-🎯 Sample Prediction Outputs
-
-Below are example outputs of the model's predictions on multilingual speech data:
+## 🎯 Sample Prediction Outputs
 
 <div align="center">
-  <img src="static/home_page.png" alt="Prediction 1" />
+  <img src="static/home_page.png" alt="Home Page" width="600"/>
+  <br/>
+  <em>Emotion Prediction Interface</em>
 </div>
 
 <div align="center">
-  <img src="static/result_page.png" alt="Prediction 2 " />
+  <img src="static/result_page.png" alt="Result Page" width="600"/>
+  <br/>
+  <em>Prediction Results Display</em>
 </div>
 
+---
 
-🚧 Future Improvements
-🔄 Real-time emotion recognition integration using streaming audio input.
+## 🧭 Future Improvements
 
-🌐 Expand dataset to include more languages and speakers.
+* 🔄 Add **real-time** streaming audio emotion detection
+* 🌍 Expand dataset for more languages and speaker diversity
+* ⚡ Improve inference time for **edge/real-time applications**
 
-⚡ Optimize models for faster inference and deployment.
+---
 
-📜 License
-This project is licensed under the MIT License — see the LICENSE file for details.
+## 📦 Tech Stack & Libraries
 
-🙌 Acknowledgements
-TESS Dataset - Toronto Emotional Speech Set
+| Tool         | Version |
+| ------------ | ------- |
+| Python       | 3.8+    |
+| NumPy        | 1.24+   |
+| Pandas       | 1.5+    |
+| Librosa      | 0.10+   |
+| scikit-learn | 1.2+    |
+| XGBoost      | 1.7+    |
+| Keras        | 2.x     |
+| TensorFlow   | 2.x     |
+| Matplotlib   | 3.x     |
 
-Librosa
+---
 
-Keras
+## 📜 License
 
-Scikit-learn
+This project is licensed under the **MIT License** – see the [LICENSE](LICENSE) file for details.
+
+---
+
+## 🙌 Acknowledgements
+
+* **[TESS Dataset](https://tspace.library.utoronto.ca/handle/1807/24487)** – Toronto Emotional Speech Set
+* **Librosa** – Python library for audio analysis
+* **Keras** & **TensorFlow** – Deep learning frameworks
+* **scikit-learn** – ML toolkit for training classifiers
+
+
 
