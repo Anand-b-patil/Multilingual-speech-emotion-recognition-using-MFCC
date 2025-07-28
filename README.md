@@ -1,4 +1,4 @@
-🌍 Multilingual Speech Emotion Recognition 🎙️🧠
+##🌍 Multilingual Speech Emotion Recognition 🎙️🧠
 A machine learning and deep learning-based project for detecting emotions from speech across multiple languages using advanced audio processing techniques.
 
 📌 Project Overview
