@@ -1,128 +1,146 @@
-# 🌍 Multilingual Speech Emotion Recognition 🎙️🧠
-=======
-##Project Overview
+# Multilingual Speech Emotion Recognition 🎙️🧠
 
-A machine learning and deep learning-based project for detecting emotions from speech across **multiple languages** using advanced **audio processing** and **neural network architectures**.
+## Project Overview
 
----
-=======
-##Features
-
-## 📌 Project Overview
-
-This project classifies emotions from speech audio samples across various languages. It extracts powerful acoustic features (MFCCs, Chroma, Mel Spectrograms) and applies both **machine learning** and **deep learning** models to recognize emotions like happiness, sadness, anger, and neutrality.
+A **Machine Learning** and **Deep Learning** project designed to detect emotions from **speech audio** across multiple languages using advanced **audio signal processing** and **neural networks**.
+This project also includes a **Flask web application** for real-time emotion detection and visualization.
 
 ---
 
-## 🚀 Features
+## Features
 
-* ✅ Multilingual support (English, Spanish, French, etc.)
-* ✅ Emotion detection: **Happy**, **Sad**, **Angry**, **Neutral**, etc.
-* ✅ Advanced audio feature extraction using `Librosa`
-* ✅ ML Models: SVM, Random Forest, XGBoost
-* ✅ DL Models: CNN, LSTM
-* ✅ Scalable for **real-time** emotion detection applications
-
-## 📂 Dataset
-
-**Toronto Emotional Speech Set (TESS)**
-  Includes speech samples from two female actors, simulating various emotions across multiple sentences.
+✅ Multilingual support — English, Spanish, French, etc.
+✅ Emotion detection: **Happy**, **Sad**, **Angry**, **Neutral**, and more
+✅ Advanced **feature extraction** using `Librosa` (MFCCs, Chroma, Mel Spectrograms)
+✅ Includes both **ML models** (SVM, Random Forest, XGBoost) and **DL models** (CNN, LSTM)
+✅ Flask web interface for uploading and predicting emotions from speech
+✅ Real-time visualizations — **Waveform** and **Spectrogram**
 
 ---
 
-## 🛠️ Installation
-=======
-##Installation
+## Dataset
 
-Clone the repository:
+### **Toronto Emotional Speech Set (TESS)**
+
+* Speech recordings from two female actors
+* Simulated emotions: anger, happiness, sadness, disgust, fear, surprise, and neutral
+* Used for multilingual and emotion classification experiments
+
+---
+
+## Installation
+
+### 1️⃣ Clone the Repository
 
 ```bash
 git clone https://github.com/Anand-b-patil/Multilingual-speech-emotion-recognition-using-MFCC.git
 cd Multilingual-speech-emotion-recognition-using-MFCC
 ```
 
-Install the dependencies:
+### 2️⃣ Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
----
+### 3️⃣ Run the Flask App
 
-## 🎼 Feature Extraction
+```bash
+python app.py
+```
 
-Features are extracted using **Librosa**:
+Then open your browser and go to:
 
-* 🎵 **MFCC** (Mel Frequency Cepstral Coefficients)
-* 🎼 **Chroma Frequencies**
-* 🌈 **Mel Spectrograms**
-
----
-
-## 🧠 Models Used
-
-### 🛠 Machine Learning Models
-
-* 🔹 Support Vector Machine (SVM)
-* 🔹 Random Forest
-* 🔹 XGBoost
-
-### 🤖 Deep Learning Models
-
-* 🧱 Convolutional Neural Networks (CNN)
-* ⏳ Long Short-Term Memory (LSTM)
+```
+http://127.0.0.1:5000/
+```
 
 ---
 
-## 📊 Results
+## Feature Extraction
 
-* ✅ High accuracy for emotion detection across languages
-* 🔬 Robust performance on multiple datasets
-* 🚀 Ready for future **real-time deployment** potential
+Feature extraction is performed using **Librosa**:
 
----
-
-## 🎯 Sample Prediction Outputs
-
-<div align="center">
-  <img src="static/home_page.png" alt="Home Page" width="600"/>
-  <br/>
-  <em>Emotion Prediction Interface</em>
-</div>
-
-<div align="center">
-  <img src="static/result_page.png" alt="Result Page" width="600"/>
-  <br/>
-  <em>Prediction Results Display</em>
-</div>
+* **MFCC (Mel-Frequency Cepstral Coefficients)** — core feature for emotion detection
+* **Chroma Frequencies** — captures harmonic content
+* **Mel Spectrograms** — visual representation of frequency intensities
 
 ---
 
-## 📦 Tech Stack & Libraries
+## Models Used
 
-| Tool         | Version |
-| ------------ | ------- |
-| Python       | 3.8+    |
-| NumPy        | 1.24+   |
-| Pandas       | 1.5+    |
-| Librosa      | 0.10+   |
-| scikit-learn | 1.2+    |
-| XGBoost      | 1.7+    |
-| TensorFlow   | 2.x     |
-| Matplotlib   | 3.x     |
+### 🔹 Machine Learning
 
----
+* Support Vector Machine (SVM)
+* Random Forest Classifier
+* XGBoost
 
-## 📜 License
+### 🔸 Deep Learning
 
-This project is licensed under the MIT License. See the `LICENSE` file for details.
+* Convolutional Neural Network (CNN)
+* Long Short-Term Memory (LSTM)
+
+Flask app loads a trained **Keras (.keras)** deep learning model for live inference.
 
 ---
 
-## 🙌 Acknowledgements
+## Web Application
 
-* TESS Dataset — Toronto Emotional Speech Set
-* Librosa — audio analysis
-* TensorFlow & scikit-learn — modeling
+### 🔸 Home Page
 
-````
+Upload your audio file for emotion detection.
+
+### 🔸 Results Page
+
+Displays:
+
+* Predicted emotion
+* Audio duration & sample rate
+* MFCC count
+* **Waveform** and **Spectrogram** visualization
+
+
+---
+
+## Results
+
+| Model         | Accuracy | Features Used          |
+| ------------- | -------- | ---------------------- |
+| SVM           | ~85%     | MFCC                   |
+| Random Forest | ~88%     | MFCC + Chroma          |
+| XGBoost       | ~90%     | Combined features      |
+| CNN-LSTM      | **93%+** | MFCC + Mel Spectrogram |
+
+---
+
+## Tech Stack
+
+| Tool / Library     | Version |
+| ------------------ | ------- |
+| Python             | 3.8+    |
+| NumPy              | 1.24+   |
+| Pandas             | 1.5+    |
+| Librosa            | 0.10+   |
+| scikit-learn       | 1.2+    |
+| XGBoost            | 1.7+    |
+| TensorFlow / Keras | 2.x     |
+| Matplotlib         | 3.x     |
+| Flask              | 2.x     |
+
+---
+
+## License
+
+This project is licensed under the **MIT License**.
+See the [`LICENSE`](LICENSE) file for more details.
+
+---
+
+## Acknowledgements
+
+* [Toronto Emotional Speech Set (TESS)](https://tspace.library.utoronto.ca/handle/1807/24487)
+* [Librosa](https://librosa.org/) — audio feature extraction
+* [TensorFlow](https://www.tensorflow.org/) & [scikit-learn](https://scikit-learn.org/) — model training
+
+
+
