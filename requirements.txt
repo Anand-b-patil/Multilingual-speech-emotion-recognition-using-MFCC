@@ -1,7 +1,7 @@
+Flask
 IPython
 Pillow
-glob2
-keras
+audioread
 librosa
 matplotlib
 numpy
@@ -9,5 +9,5 @@ pandas
 pydub
 scikit-learn
 sounddevice
+soundfile
 tensorflow
-tk
