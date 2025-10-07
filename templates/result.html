@@ -5,19 +5,19 @@
     <style>
         body {
             font-family: 'Segoe UI', sans-serif;
-            background: url('https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
-            animation: zoomBackground 40s ease-in-out infinite;
-            color: #fff;
+            /* Use matching gradient background for consistency with index page */
+            background: linear-gradient(135deg, #0f172a 0%, #0b2545 50%, #071331 100%);
+            color: #e6f7ff;
             text-align: center;
             padding: 40px;
         }
 
         .container {
-            background: rgba(0, 0, 0, 0.5);
+            background: rgba(6, 12, 25, 0.85);
             padding: 30px;
             border-radius: 15px;
-            box-shadow: 0 0 15px #000;
-            max-width: 800px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            max-width: 900px;
             margin: auto;
         }
 
@@ -27,30 +27,34 @@
 
         .result {
             font-size: 28px;
-            color: #ffe082;
+            color: #ffd166;
             margin: 30px 0;
         }
 
         img {
             max-width: 100%;
             border-radius: 10px;
-            box-shadow: 0 0 10px #000;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.4);
             margin-top: 20px;
+            background: #ffffff10;
+            padding: 6px;
         }
 
         a {
             display: inline-block;
             margin-top: 25px;
             padding: 12px 25px;
-            background-color: #29b6f6;
+            background: linear-gradient(135deg, #22c1c3, #2b9aa0);
             color: white;
-            border-radius: 5px;
+            border-radius: 8px;
             text-decoration: none;
-            transition: background 0.3s ease;
+            transition: transform 0.15s ease, box-shadow 0.15s ease;
+            box-shadow: 0 6px 18px rgba(34,193,195,0.12);
         }
 
         a:hover {
-            background-color: #0288d1;
+            transform: translateY(-3px);
+            box-shadow: 0 12px 30px rgba(34,193,195,0.18);
         }
     </style>
 </head>
