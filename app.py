@@ -9,7 +9,7 @@ import os
 
 app = Flask(__name__)
 app.config['UPLOAD_FOLDER'] = 'uploads'
-model = tf.keras.models.load_model('emotion_model.keras')
+model = tf.keras.models.load_model('models/emotion_model.keras')
 emotion_labels = ['angry', 'disgust', 'fear', 'happy', 'neutral', 'ps', 'sad']
 
 @app.route('/')
