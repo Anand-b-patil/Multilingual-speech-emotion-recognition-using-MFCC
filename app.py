@@ -3,6 +3,12 @@ from werkzeug.utils import secure_filename
 import os
 import logging
 from logging.handlers import RotatingFileHandler
+import matplotlib
+# Use non-interactive backend to avoid GUI warnings when running inside Flask
+matplotlib.use('Agg')
+import numpy as np
+import librosa
+import matplotlib.pyplot as plt
 
 from src.predict import predict_emotion
 from src.preprocessing import load_waveform
@@ -59,7 +65,6 @@ def predict_endpoint():
         result = predict_emotion(filepath)
         # Try to generate visualizations (waveform/spectrogram) for UI
         signal, sr = load_waveform(filepath)
-        import matplotlib.pyplot as plt
         import librosa.display
 
         os.makedirs('static', exist_ok=True)
@@ -71,8 +76,9 @@ def predict_endpoint():
         plt.savefig(waveform_path)
         plt.close()
 
-        stft = abs(librosa.stft(signal))
-        db_stft = librosa.amplitude_to_db(stft, ref=max)
+        stft = np.abs(librosa.stft(signal))
+        # use numpy's max as ref to compute reference value from the magnitude array
+        db_stft = librosa.amplitude_to_db(stft, ref=np.max)
         spectrogram_path = os.path.join('static', 'spectrogram.png')
         plt.figure(figsize=(10, 4))
         librosa.display.specshow(db_stft, sr=sr, x_axis='time', y_axis='log')
