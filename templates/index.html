@@ -15,24 +15,17 @@
             font-family: 'Poppins', sans-serif;
             height: 100vh;
             overflow: hidden;
-            background: url('https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
-            animation: zoomBackground 40s ease-in-out infinite;
+            /* Replaced background image with a subtle, modern gradient for accessibility */
+            background: linear-gradient(135deg, #0f172a 0%, #0b2545 50%, #071331 100%);
             display: flex;
             justify-content: center;
             align-items: center;
-        }
-
-        @keyframes zoomBackground {
-            0%, 100% {
-                background-size: 100%;
-            }
-            50% {
-                background-size: 105%;
-            }
+            color: #e6f7ff;
         }
 
         .container {
-            background: rgba(0, 0, 0, 0.75);
+            /* slightly lighter translucent background for better contrast on the gradient */
+            background: rgba(6, 12, 25, 0.85);
             padding: 40px;
             border-radius: 20px;
             box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
@@ -84,13 +77,14 @@
             margin-top: 15px;
             border: none;
             border-radius: 30px;
-            background: linear-gradient(135deg, #00eaff, #00ffa2);
-            color: #000;
+            background: linear-gradient(135deg, #22c1c3, #2b9aa0);
+            color: #fff;
             font-weight: bold;
             font-size: 16px;
             cursor: pointer;
             transition: all 0.3s ease;
             animation: fadeIn 3s ease forwards;
+            box-shadow: 0 6px 18px rgba(34,193,195,0.16);
         }
 
         button:hover {
