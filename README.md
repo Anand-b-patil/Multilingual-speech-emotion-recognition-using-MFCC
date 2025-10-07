@@ -10,10 +10,15 @@ This project also includes a **Flask web application** for real-time emotion det
 ## Features
 
 ✅ Multilingual support — English, Spanish, French, etc.
+
 ✅ Emotion detection: **Happy**, **Sad**, **Angry**, **Neutral**, and more
+
 ✅ Advanced **feature extraction** using `Librosa` (MFCCs, Chroma, Mel Spectrograms)
+
 ✅ Includes both **ML models** (SVM, Random Forest, XGBoost) and **DL models** (CNN, LSTM)
+
 ✅ Flask web interface for uploading and predicting emotions from speech
+
 ✅ Real-time visualizations — **Waveform** and **Spectrogram**
 
 ---
