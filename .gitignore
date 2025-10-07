@@ -1,0 +1,36 @@
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Models and large binaries
+models/
+*.h5
+*.keras
+*.pt
+*.pth
+
+# Logs and runtime files
+logs/
+*.log
+
+# Uploaded files and generated media
+uploads/
+static/*.png
+static/*.jpg
+static/*.jpeg
+static/*.svg
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# OS files
+.DS_Store
+Thumbs.db
+data
+venv
+__pycache__
