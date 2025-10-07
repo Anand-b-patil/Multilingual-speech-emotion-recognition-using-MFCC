@@ -1,0 +1,9 @@
+2025-10-07 10:37:40,858 ERROR app - Error during prediction
+Traceback (most recent call last):
+  File "D:\Projects\Multilingual-speech-emotion-recognition-using-MFCC\app.py", line 75, in predict_endpoint
+    db_stft = librosa.amplitude_to_db(stft, ref=max)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Projects\Multilingual-speech-emotion-recognition-using-MFCC\venv\Lib\site-packages\librosa\core\spectrum.py", line 1965, in amplitude_to_db
+    ref_value = ref(magnitude)
+                ^^^^^^^^^^^^^^
+ValueError: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
